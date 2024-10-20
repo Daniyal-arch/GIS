@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .dashboard-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .map-section {
+            width: 75%;
+            position: relative;
+        }
+
+        .map-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dropdowns, .charts {
+            margin-bottom: 20px;
+        }
+
+        .dropdown {
+            margin-bottom: 10px;
+        }
+
+        .dropdown select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .chart-placeholder img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .chart-placeholder {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    GIS Dashboard
+</header>
+
+<div class="dashboard-container">
+    <div class="sidebar">
+        <div class="dropdowns">
+            <h2>Filters</h2>
+            <div class="dropdown">
+                <select>
+                    <option>Category 1</option>
+                    <option>Category 2</option>
+                    <option>Category 3</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <select>
+                    <option>Region 1</option>
+                    <option>Region 2</option>
+                    <option>Region 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="charts">
+            <h2>Data Visualizations</h2>
+            <div class="chart-placeholder">
+                <img src="https://th.bing.com/th/id/OIP.wROa-Ffpq_w65iNT9pr2ggHaEx?w=247&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7" alt="Bar Chart">
+            </div>
+            <div class="chart-placeholder">
+                <img src="https://th.bing.com/th/id/OIP.0mbw9KTq0l2D8ISzVapuJwAAAA?w=213&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7" alt="Pie Chart">
+            </div>
+        </div>
+    </div>
+    <div class="map-section">
+        <div class="map-placeholder">
+            <img src="https://i.pinimg.com/736x/bb/ff/d8/bbffd8f42038fd9e4486fc710c7f2a26.jpg" alt="World Map">
+            <img src="https://i.pinimg.com/736x/bb/ff/d8/bbffd8f42038fd9e4486fc710c7f2a26.jpg" alt="World Map">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
